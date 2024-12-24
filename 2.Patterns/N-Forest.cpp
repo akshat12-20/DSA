@@ -22,8 +22,19 @@ int main()
 {   
     // Here, we have taken the value of N as 5.
     // We can also take input from the user.
-    int N = 5;
-    pattern1(N);
+    // int N = 5;
+    // pattern1(N);
+
+int testcases;
+cout<<"Input the number of test cases:"<<endl;
+cin>>testcases;
+for(int i=0; i<testcases; i++){
+int n;
+cout<<"For the "<<(i+1)<<"th test case:"<<endl;
+cout<<"enter the value of n:"<<endl;
+cin>>n;
+pattern1(n);
+}
 
     return 0;
 }
