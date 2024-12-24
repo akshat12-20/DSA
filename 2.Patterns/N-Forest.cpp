@@ -4,12 +4,10 @@ using namespace std;
 void pattern1(int N)
 {
     // This is the outer loop which will loop for the rows.
-    for (int i = 0; i < N; i++)
-    {
+    for(int lines=0; lines<N; lines++){
         // This is the inner loop which here, loops for the columns
         // as we have to print a rectangular pattern.
-        for (int j = 0; j < N; j++)
-        {
+        for(int col=0; col<N; col++){
             cout << "* ";
         }
        
@@ -25,7 +23,6 @@ int main()
     // Here, we have taken the value of N as 5.
     // We can also take input from the user.
     int N = 5;
-
     pattern1(N);
 
     return 0;
